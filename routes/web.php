@@ -19,5 +19,6 @@ Route::get('welcome', function () {
 Route::Post('login',[SessionController::class,'GetSession']);
 
 Route::get('logout',[SessionController::class,'logout']);
-
-Route::get('user',[User::class,'GetUser']);
+// session flash
+Route::view('userview','User');
+Route::post('user',[User::class,'GetUser']);
