@@ -7,4 +7,10 @@ Route::get('welcome', function () {
     return view('welcome');
 });
 
-Route::get('session',[SessionController::class,'GetSession']);
+
+
+  Route:: view('login','SessionView');
+
+
+
+Route::Post('login',[SessionController::class,'GetSession']);

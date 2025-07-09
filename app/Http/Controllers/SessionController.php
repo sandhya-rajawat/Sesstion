@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class SessionController extends Controller
 {
     function GetSession(){
-        return 'hello Session';
+        return 'THis is here!!';
     }
 }
