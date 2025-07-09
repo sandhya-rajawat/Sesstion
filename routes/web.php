@@ -10,7 +10,11 @@ Route::get('welcome', function () {
 
 
   Route:: view('login','SessionView');
+  Route:: view('profile','profile');
+
 
 
 
 Route::Post('login',[SessionController::class,'GetSession']);
+
+Route::get('logout',[SessionController::class,'logout']);
